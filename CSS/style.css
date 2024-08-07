@@ -122,15 +122,16 @@ header {
   align-items: center;
 }
 
-.divider-bar {
-  margin: 0 auto;
-  content: "";
-  width: 0.0625rem;
-  height: 5.25rem;
-  background-color: var(--light-gray);
+.divider {
+  padding-top: 6.875rem;
 }
 
-.divider-circle {
+.divider-two {
+  padding-top: 4.375rem;
+}
+
+.number-one,
+.number-two {
   font-size: 1rem;
   font-weight: 900;
   line-height: 150%;
@@ -141,6 +142,14 @@ header {
   margin: 0 auto;
   width: 3.5rem;
   height: 3.5rem;
+}
+
+.divider-bar {
+  margin: 0 auto;
+  content: "";
+  width: 0.0625rem;
+  height: 5.25rem;
+  background-color: var(--light-gray);
 }
 
 /* Photo Gallery */
@@ -187,4 +196,51 @@ header {
   font-weight: 500;
   color: var(--gray);
   line-height: 150%;
+}
+
+/* Footer section */
+.footer-wrapper {
+  background-color: var(--cyan-600);
+  position: relative;
+  z-index: 1;
+  height: 26.75rem;
+  margin-top: -1.75rem;
+  padding: 64px 32px;
+}
+
+.number-two {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-wrapper::before {
+  content: "";
+  background-image: url(/assets/mobile/image-footer.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  opacity: 0.2;
+  z-index: -5;
+}
+
+.footer-content {
+  color: var(--white);
+}
+
+.footer-content h3 {
+  font-size: clamp(2rem, 1.125rem + 1.25vw, 2.5rem);
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.footer-content p {
+  margin: 24px 0;
+  font-weight: 500;
+}
+
+.light-purple {
+  color: var(--purple-300);
 }
