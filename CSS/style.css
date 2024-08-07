@@ -48,11 +48,113 @@ button {
 
 body {
   font-family: "Red Hat Display", sans-serif;
-  line-height: 110%;
-  letter-spacing: 0px;
   text-align: center;
   min-height: 100vh;
   background-color: var(--white);
 }
 
 /* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 0 64px 0;
+}
+
+/* Hero Scetion */
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  margin: 48px 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 2.5vw + 1rem, 4rem);
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.hero-body {
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--gray);
+}
+
+.btn {
+  padding: 16px 40px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  border-radius: 29px;
+}
+
+.btn-cyan {
+  background-color: var(--cyan-600);
+  margin-bottom: 16px;
+}
+
+.light-cyan {
+  color: var(--cyan-300);
+}
+
+.btn-purple {
+  background-color: var(--purple-600);
+}
+
+/* Divider */
+.divider {
+  margin: 64px 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-bar {
+  margin: 0 auto;
+  content: "";
+  width: 0.0625rem;
+  height: 5.25rem;
+  background-color: var(--light-gray);
+}
+
+.divider-circle {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  color: var(--gray);
+  background-color: var(--white);
+  border: 0.0938rem solid var(--light-gray);
+  border-radius: 6.25rem;
+  margin: 0 auto;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+/* Photo Gallery */
+.photo-gallery-wrapper {
+  padding: 0 32px;
+  margin-bottom: 64px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.gallery-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
