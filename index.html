@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- header logo -->
-    <header>
+    <header class="flex">
       <a href="index.html">
         <div class="meet-logo">
           <img src="./assets/logo.svg" alt="meet logo" />
@@ -25,8 +25,11 @@
     </header>
 
     <!-- hero section -->
-    <main class="hero-wrapper">
-      <div class="hero-img">
+    <main class="hero-wrapper flex">
+      <div class="hero-img-left">
+        <img src="./assets/desktop/image-hero-left.png" alt="" />
+      </div>
+      <div class="hero-img flex">
         <img
           src="./assets/tablet/image-hero.png"
           alt="images of profile pictures"
@@ -41,12 +44,15 @@
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <div class="hero-btn">
+        <div class="hero-btn flex">
           <button class="btn btn-cyan">
             Download <span class="light-cyan">v1.3</span>
           </button>
           <button class="btn btn-purple">What is it?</button>
         </div>
+      </div>
+      <div class="hero-img-right">
+        <img src="./assets/desktop/image-hero-right.png" alt="" />
       </div>
     </main>
 
@@ -99,9 +105,9 @@
       <span class="number-two flex">02</span>
     </section>
 
-    <footer class="footer-wrapper">
+    <footer class="footer-wrapper flex">
       <div class="footer-content">
-        <h3>Experience more togehter</h3>
+        <h3>Experience more together</h3>
         <p>
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
