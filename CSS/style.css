@@ -215,7 +215,7 @@ header {
 
 .footer-wrapper::before {
   content: "";
-  background-image: url(/assets/mobile/image-footer.jpg);
+  background-image: url(./assets/mobile/image-footer.jpg);
   background-size: cover;
   position: absolute;
   top: 0rem;
