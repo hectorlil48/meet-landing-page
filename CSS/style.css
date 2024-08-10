@@ -218,7 +218,7 @@ header {
 
 .footer-wrapper::before {
   content: "";
-  background-image: url(/assets/mobile/image-footer.jpg);
+  background-image: url(./assets/mobile/image-footer.jpg);
   background-size: cover;
   position: absolute;
   top: 0rem;
@@ -246,7 +246,7 @@ header {
 
 @media (min-width: 450px) {
   .footer-wrapper::before {
-    background-image: url(/assets/tablet/image-footer.jpg);
+    background-image: url(./assets/tablet/image-footer.jpg);
   }
 }
 
