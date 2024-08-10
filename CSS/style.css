@@ -155,10 +155,10 @@ header {
 /* Photo Gallery */
 .photo-gallery-wrapper {
   padding: 0 32px;
-  margin: 0 auto 64px;
-  max-width: 1300px;
 }
 .gallery-grid {
+  margin: 0 auto 64px;
+  max-width: 1300px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -205,8 +205,10 @@ header {
   background-color: var(--cyan-600);
   position: relative;
   z-index: 1;
-  height: 21.875rem;
+  height: 26.75rem;
   margin-top: -1.75rem;
+  color: var(--white);
+  text-align: center;
 }
 
 .number-two {
@@ -214,33 +216,9 @@ header {
   z-index: 2;
 }
 
-.flex footer {
-  gap: 5rem;
-  justify-content: space-between;
-}
-
-.footer-wrapper .body-text,
-.footer-wrapper .h2 {
-  color: var(--white);
-  max-width: 21.875rem;
-  text-align: left;
-}
-
-.h2 {
-  font-size: 2rem;
-}
-
-.body-text {
-  font-size: 1rem;
-}
-
-.footer-wrapper .btn-1:hover {
-  background-color: var(--cyan-hover);
-}
-
 .footer-wrapper::before {
   content: "";
-  background-image: url(./assets/desktop/image-footer.jpg);
+  background-image: url(/assets/mobile/image-footer.jpg);
   background-size: cover;
   position: absolute;
   top: 0rem;
@@ -249,6 +227,17 @@ header {
   left: 0rem;
   opacity: 0.2;
   z-index: -5;
+}
+
+.flex footer {
+  display: flex;
+  flex-direction: column;
+  max-width: 18.75rem;
+  gap: 2.5rem;
+}
+
+.h2 {
+  font-size: 2rem;
 }
 
 .light-purple {
@@ -281,9 +270,22 @@ header {
   .des-sub-title {
     font-size: 0.875rem;
   }
+
+  .flex footer {
+    max-width: 35rem;
+  }
+
+  .h2 {
+    font-size: 2.25rem;
+  }
+
+  .body-text {
+    font-size: 1.125rem;
+    line-height: 150%;
+  }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1030px) {
   .hero-wrapper {
     flex-direction: row;
   }
@@ -310,11 +312,23 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .h2 {
-    font-size: 2.5rem;
+  .flex footer {
+    max-width: 1300px;
+    flex-direction: row;
+    gap: 10rem;
+    text-align: left;
   }
 
-  .body-text {
-    font-size: 1.125rem;
+  .footer-wrapper {
+    height: 21.875rem;
+  }
+
+  .footer-wrapper .body-text,
+  .footer-wrapper .h2 {
+    max-width: 21.875rem;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
   }
 }
