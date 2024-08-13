@@ -55,12 +55,21 @@ body {
 
 /* Header */
 header {
-  margin: 48px 0 64px 0;
+  margin: 5rem 0 4rem 0;
+}
+
+.meet-logo:hover {
+  filter: saturate(3);
 }
 
 /* Hero Scetion */
 .hero-wrapper {
   flex-direction: column;
+  gap: 1.7rem;
+}
+
+.hero-img-moblie {
+  margin-bottom: 4.375rem;
 }
 
 .hero-img-right,
@@ -68,23 +77,33 @@ header {
   display: none;
 }
 
-.hero-content {
-  padding: 48px 32px 0;
-  max-width: 500px;
+.hero-img-left,
+.hero-img-right,
+.meet-logo {
+  animation: slideIn 1s ease-out;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 2.5vw + 1rem, 4rem);
+  font-size: 2.5rem;
   font-weight: 900;
   line-height: 110%;
+  color: var(--black);
+}
+
+.gradient-text {
+  background: linear-gradient(92.19deg, #855fb1 -15.84%, #4d96a9 114.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-body {
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.125rem);
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 144%;
   color: var(--gray);
-  margin: 32px 0;
+  margin: 32px 20px;
+  max-width: 26rem;
 }
 
 .hero-btn {
@@ -171,7 +190,7 @@ header {
 
 /* Description Section */
 .description-section {
-  max-width: 32.5rem;
+  max-width: 35rem;
   padding: 0 32px;
   margin: 0 auto;
 }
@@ -251,6 +270,10 @@ header {
 }
 
 @media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
   .hero-btn {
     flex-direction: row;
   }
@@ -261,6 +284,7 @@ header {
 
   .gallery-grid {
     gap: 24px;
+    padding: 0 32px;
   }
 
   .des-title {
@@ -285,23 +309,14 @@ header {
   }
 }
 
-@media (min-width: 1030px) {
-  .hero-wrapper {
-    flex-direction: row;
+@media (min-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
   }
 
-  .hero-content {
-    padding: 0;
-    margin: 0 4rem;
-  }
-
-  .hero-img-right,
-  .hero-img-left {
-    display: block;
-  }
-
-  .hero-img {
-    display: none;
+  .hero-body {
+    font-size: 1.125rem;
+    max-width: 32.5rem;
   }
 
   .photo-gallery-wrapper {
@@ -330,5 +345,47 @@ header {
 
   .h2 {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1270px) {
+  .hero-wrapper {
+    flex-direction: row;
+    gap: 1.7rem;
+  }
+
+  .hero-img-right,
+  .hero-img-left {
+    display: flex;
+  }
+
+  .hero-img-left {
+    content: url(/assets/desktop/image-hero-left.png);
+    margin-bottom: 3rem;
+  }
+
+  .hero-img-right {
+    content: url(/assets/desktop/image-hero-right.png);
+    margin-bottom: -3rem;
+  }
+
+  .hero-img-moblie {
+    display: none;
+  }
+}
+
+/* intro animation */
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
