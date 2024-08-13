@@ -250,7 +250,6 @@ header {
 footer {
   flex-direction: column;
   gap: 2.5rem;
-  padding: 0 32px;
   max-width: 35rem;
 }
 
@@ -326,7 +325,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .flex footer {
+  footer {
     max-width: 1300px;
     flex-direction: row;
     gap: 10rem;
@@ -335,6 +334,10 @@ footer {
 
   .footer-wrapper {
     height: 21.875rem;
+  }
+
+  .body-text {
+    font-size: 1.125rem;
   }
 
   .footer-wrapper .body-text,
