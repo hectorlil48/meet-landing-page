@@ -224,10 +224,9 @@ header {
   background-color: var(--cyan-600);
   position: relative;
   z-index: 1;
-  height: 26.75rem;
+  height: 23.375rem;
   margin-top: -1.75rem;
   color: var(--white);
-  text-align: center;
 }
 
 .number-two {
@@ -248,15 +247,20 @@ header {
   z-index: -5;
 }
 
-.flex footer {
-  display: flex;
+footer {
   flex-direction: column;
-  max-width: 18.75rem;
   gap: 2.5rem;
+  padding: 0 32px;
+  max-width: 35rem;
 }
 
 .h2 {
   font-size: 2rem;
+}
+
+.body-text {
+  max-width: 36rem;
+  line-height: 150%;
 }
 
 .light-purple {
@@ -295,17 +299,12 @@ header {
     font-size: 0.875rem;
   }
 
-  .flex footer {
-    max-width: 35rem;
-  }
-
   .h2 {
     font-size: 2.25rem;
   }
 
-  .body-text {
-    font-size: 1.125rem;
-    line-height: 150%;
+  .footer-wrapper {
+    height: 20rem;
   }
 }
 
