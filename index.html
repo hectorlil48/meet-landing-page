@@ -19,9 +19,7 @@
     <header class="flex">
       <a href="index.html">
         <div class="meet-logo">
-          <a href="./index.html"
-            ><img src="./assets/logo.svg" alt="meet logo"
-          /></a>
+          <img src="./assets/logo.svg" alt="meet logo" />
         </div>
       </a>
     </header>
@@ -29,13 +27,13 @@
     <!-- hero section -->
     <main class="hero-wrapper flex">
       <div class="hero-img-left">
-        <img src="./assets/desktop/image-hero-left.png" alt="" />
-      </div>
-      <div class="hero-img-moblie flex">
         <img
-          src="./assets/tablet/image-hero.png"
-          alt="images of profile pictures"
+          src="./assets/desktop/image-hero-left.png"
+          alt="hero image on the left on desktop"
         />
+      </div>
+      <div class="hero-img-mobile flex">
+        <img src="./assets/tablet/image-hero.png" alt="hero image on mobile" />
       </div>
       <div class="hero-content">
         <h1 class="hero-title">
@@ -47,14 +45,22 @@
           collaborate across any device.
         </p>
         <div class="hero-btn flex">
-          <button class="btn btn-cyan">
+          <button class="btn btn-cyan" aria-label="Download version 1.3">
             Download <span class="light-cyan">v1.3</span>
           </button>
-          <button class="btn btn-purple">What is it?</button>
+          <button
+            class="btn btn-purple"
+            aria-label="Learn more about this service"
+          >
+            What is it?
+          </button>
         </div>
       </div>
       <div class="hero-img-right">
-        <img src="./assets/desktop/image-hero-right.png" alt="" />
+        <img
+          src="./assets/desktop/image-hero-right.png"
+          alt="hero image on the right on desktop"
+        />
       </div>
     </main>
 
@@ -107,17 +113,17 @@
       <span class="number-two flex">02</span>
     </section>
 
-    <div class="footer-wrapper flex">
-      <footer class="flex">
-        <h3 class="h2">Experience more together</h3>
-        <p class="body-text">
+    <footer class="footer-wrapper flex">
+      <div class="footer-container flex">
+        <h3 class="footer-title">Experience more together</h3>
+        <p class="footer-text">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button class="btn btn-purple">
+        <button class="btn btn-purple" aria-label="Download version 1.3">
           Download <span class="light-purple">v1.3</span>
         </button>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
