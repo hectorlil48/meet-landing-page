@@ -391,12 +391,12 @@ header {
   }
 
   .hero-img-left {
-    content: url(/assets/desktop/image-hero-left.png);
+    content: url(./assets/desktop/image-hero-left.png);
     margin-bottom: 3rem;
   }
 
   .hero-img-right {
-    content: url(/assets/desktop/image-hero-right.png);
+    content: url(./assets/desktop/image-hero-right.png);
     margin-bottom: -3rem;
   }
 
