@@ -1,6 +1,6 @@
 # Frontend Mentor - Meet landing page solution
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -14,9 +14,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,20 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/desktop-screenshot.png)
+![](./screenshots/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/hectorlil48/meet-landing-page)
+- Live Site URL: [Live site URL here](https://hectorlil48.github.io/meet-landing-page/)
 
 ## My process
 
@@ -53,59 +43,66 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I have learned so much from doing this project. I finally used semantic HTMl properly to outline my HTML. However, I have learned a lot more about using CSS. This was my first time doing a full page like this, so I got everything styled by separating my sections. I went back and put a lot of work into making my code look better and it has gotten better. I got to learn how to make a gradient color that I used on my title. I had to figure out how to add an image behind the text and still have a background color. That was hard and I still don’t know how to keep my image from stretching too much when resided. Making animations in CSS was something I didn’t understand at first but I love it now that I know how to use keyframes.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<header class="flex">
+  <a href="index.html">
+    <div class="meet-logo">
+      <img src="./assets/logo.svg" alt="meet logo" />
+    </div>
+  </a>
+</header>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.gradient-text {
+  background: linear-gradient(92.19deg, #855fb1 -15.84%, #4d96a9 114.64%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-wrapper::before {
+  content: "";
+  background-image: url(../assets/mobile/image-footer.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  opacity: 0.2;
+  z-index: -5;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I feel like I am improving with CSS, so I want to keep practicing. I am particularly interested in learning more about using background images effectively.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [ChatGPT](https://chatgpt.com/) - ChatGPT has been really helpful to me. It made me realize that using rem units is better than static units like px, as it ensures a more responsive page. After learning this, I switched all my margins, paddings, and fonts to use rem. Additionally, ChatGPT helped me understand how to create an animation using keyframes.
+- [W3schools](https://www.w3schools.com/) - W3Schools is a valuable resource for refreshing my understanding of CSS, especially when it comes to margins and paddings. I often use it to quickly look up CSS styles.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [Hector Ramirez](https://github.com/hectorlil48)
+- Frontend Mentor - [@hectorlil48](https://www.frontendmentor.io/profile/hectorlil48)
+- LinkedIn - [@linkedin.com/in/hector-ramirez-6a6509170](https://www.linkedin.com/in/hector-ramirez-6a6509170/overlay/contact-info/)
