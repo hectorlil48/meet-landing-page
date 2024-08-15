@@ -365,6 +365,14 @@ header {
     grid-template-columns: repeat(4, 1fr);
   }
 
+  .description-section {
+    max-width: 38rem;
+  }
+
+  .description-body {
+    font-size: 1.125rem;
+  }
+
   .footer-wrapper {
     height: 20rem;
   }
